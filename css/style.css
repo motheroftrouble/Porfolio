@@ -119,13 +119,13 @@ body {
 	border-top: none;
 }
 
-.squareInnerContainer:before 
+.squareInnerContainer:before, 
 .squareInnerContainer:after {
 	content: '';
-	postion: absolute;
+	position: absolute;
 	top: 0px;
 	width: 30%;
-	border-button: 2px solid #444;
+	border-bottom: 2px solid #444;
 }
 
 .squareInnerContainer:before {
@@ -136,14 +136,14 @@ body {
 	left: 0px;
 }
 
-.squartContent h2{
+.squareContent h2 {
 	font-size: 56px;
 	margin-bottom: 10px;
 	font-weight: 400;
 	color: #991a6f;
 }
 
-.squartContent h3{
+.squareContent h3 {
 	font-size: 13px;
 	font-weight: 600px;
 	margin: 0;
