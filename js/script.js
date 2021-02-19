@@ -7,9 +7,9 @@ $(document).ready(function() {
 	});
 
 	var typed = new Typed(".typed", {
-		strings: ["Web Developer", "Aircraft Electrician", "Avionics Technician", "Missile Systems Repairer", "Girl Scout Leader", "Veteran"],
-		typeSpeed: 70,
-		loop: true,
+		strings: ["Web Developer", "Aircraft Electrician", "Girl Scout Leader", "Avionics Technician", "Veteran", "Missile Systems Repairer"],
+		typeSpeed: 80,
+		loop: true,  
 		startDelay: 1000,
 		showCursor: false
 	});
@@ -38,6 +38,8 @@ $(document).ready(function() {
 
    
 	var skillsTopOffset = $(".skillsSection").offset().top;
+	var statsTopOffset = $(".statsSection").offset().top;
+	var countUpFinished = false; 
 
 	$(window).scroll(function() {
 
@@ -58,15 +60,22 @@ $(document).ready(function() {
 
 		}
 
+
+		if(!countUpFinished && window.pageYOffset > statsTopOffset - $(window).height() + 200) {
+			$(".counter").each(function() {
+			 	var element = $(this);
+			 	var endVal = parseInt(element.text());
+
+			 	element.countup(endVal);
+			})
+
+			countUpFinished = true;
+		}
+				
 	
 	});
-	
-	import { CountUp } from './js/countUp.min.js';
 
-		window.onload = function() {
-  			var countUp = new CountUp('target', 2000);
-  			countUp.start();
-		}
+	
 
 
 });
