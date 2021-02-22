@@ -314,6 +314,41 @@ body {
 	padding: 0;
 }
 
+.copyrightSection {
+	background-color: #000;
+	color: #fff;
+	padding: 30px 5px;
+}
+
+.copyrightSection p {
+	margin: 0;
+}
+
+#navigation {
+	background-color: #991a6f;
+    padding: 20px 10px;
+    z-index: 100;
+}
+
+#navigation li {
+	padding-bottom: 0 10px;
+}
+
+#navigation li a {
+	color: #fff;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+	color: #fff;
+}
+
+.navbar-toggler-icon {
+	background: url(../img/icons/menu.png);
+	background-size: 100%;
+}
+
+
 
 
 
